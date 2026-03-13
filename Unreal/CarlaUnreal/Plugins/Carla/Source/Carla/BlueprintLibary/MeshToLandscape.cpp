@@ -366,8 +366,8 @@ ALandscape* UMeshToLandscapeUtil::ConvertMeshesToLandscape(
 			CQParams.bIgnoreTouches = true;
 
 			FRandomStream PRNG(Index);
-
-			if (!World->ParallelSweepSingleByChannel(
+ 
+			if (!World->SweepSingleByChannel(
 				Hit,
 				Begin,
 				End,
