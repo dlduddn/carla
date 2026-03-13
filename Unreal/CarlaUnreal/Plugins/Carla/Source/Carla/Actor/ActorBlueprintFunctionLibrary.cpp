@@ -340,6 +340,13 @@ void UActorBlueprintFunctionLibrary::MakeCameraDefinition(
   ResY.RecommendedValues = {TEXT("600")};
   ResY.bRestrictToRecommended = false;
 
+  // encoding
+  FActorVariation Encoding;
+  Encoding.Id = TEXT("encoding");
+  Encoding.Type = EActorAttributeType::String;
+  Encoding.RecommendedValues = { TEXT("bgra8"), TEXT("mono8") };
+  Encoding.bRestrictToRecommended = false;
+
   // Lens parameters
   FActorVariation LensCircleFalloff;
   LensCircleFalloff.Id = TEXT("lens_circle_falloff");
