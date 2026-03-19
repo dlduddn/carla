@@ -11,7 +11,7 @@ set (PROJECT_INSTALL_PATH ${CMAKE_CURRENT_BINARY_DIR}/install)
 
 ExternalProject_add (
   foonathan_memory
-  URL https://github.com/eProsima/foonathan_memory_vendor/archive/refs/heads/${CARLA_FOONATHAN_MEMORY_VENDOR_TAG}.zip
+  URL https://github.com/eProsima/foonathan_memory_vendor/archive/${CARLA_FOONATHAN_MEMORY_VENDOR_TAG}.zip
   CMAKE_ARGS
     -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
     -DCMAKE_INSTALL_PREFIX=${PROJECT_INSTALL_PATH}
